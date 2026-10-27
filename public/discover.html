@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090711">
+  <title>Discover Anime — Zenvori</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/discover.css">
+  <script src="/discover.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">ZEN<span>VORI</span></a>
+    <nav>
+      <a href="/">Home</a>
+      <a class="active" href="/discover.html">Discover</a>
+      <a href="/#genres">Genres</a>
+    </nav>
+  </header>
+
+  <main class="discover-main">
+    <section class="discover-intro">
+      <p class="eyebrow">YOUR NEXT OBSESSION STARTS HERE</p>
+      <h1>Discover <span>anime.</span></h1>
+      <p>Explore new worlds, unforgettable stories, and your next favourite series.</p>
+    </section>
+
+    <section class="discover-controls">
+      <label class="search-field">
+        <span aria-hidden="true">⌕</span>
+        <input id="discover-search" type="search"
+          placeholder="Search anime titles..." autocomplete="off">
+      </label>
+
+      <label class="filter-label" for="sort-select">Sort by</label>
+      <select id="sort-select">
+        <option value="POPULARITY_DESC">Most popular</option>
+        <option value="SCORE_DESC">Highest rated</option>
+        <option value="TRENDING_DESC">Trending</option>
+        <option value="START_DATE_DESC">Newest first</option>
+      </select>
+
+      <div class="discover-genres" id="discover-genres">
+        <button class="genre-chip selected" data-genre="">All anime</button>
+        <button class="genre-chip" data-genre="Action">Action</button>
+        <button class="genre-chip" data-genre="Adventure">Adventure</button>
+        <button class="genre-chip" data-genre="Comedy">Comedy</button>
+        <button class="genre-chip" data-genre="Drama">Drama</button>
+        <button class="genre-chip" data-genre="Fantasy">Fantasy</button>
+        <button class="genre-chip" data-genre="Mystery">Mystery</button>
+        <button class="genre-chip" data-genre="Romance">Romance</button>
+        <button class="genre-chip" data-genre="Sci-Fi">Sci-Fi</button>
+        <button class="genre-chip" data-genre="Slice of Life">Slice of Life</button>
+        <button class="genre-chip" data-genre="Sports">Sports</button>
+        <button class="genre-chip" data-genre="Supernatural">Supernatural</button>
+      </div>
+    </section>
+
+    <section class="discover-results">
+      <div class="results-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2 id="results-title">Popular anime</h2>
+        </div>
+        <span id="results-count"></span>
+      </div>
+
+      <p id="discover-status" role="status" aria-live="polite">Loading anime...</p>
+      <div id="discover-grid" class="discover-grid"></div>
+      <button id="load-more" class="load-more" hidden>Load more anime</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="/">ZEN<span>VORI</span></a>
+    <p>Find your next anime world.</p>
+  </footer>
+</body>
+</html>

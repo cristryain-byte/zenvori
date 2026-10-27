@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090f">
+  <meta name="description" content="Discover your next anime obsession with Zenvori.">
+  <title>Zenvori — Enter Another World</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Zenvori home">
+      <span class="brand-mark">Z</span>envori<span class="brand-dot">.</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="/discover.html">Discover</a>
+      <a href="#genres">Genres</a>
+    </nav>
+    <button class="search-toggle" id="search-toggle" aria-label="Focus search">⌕</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <span class="eyebrow"><span class="live-dot"></span> YOUR NEXT OBSESSION</span>
+        <h1>Find your next<br> <span>anime world.</span></h1>
+        <p>From unforgettable adventures to stories that stay with you. Your next favorite is waiting.</p>
+        <a class="primary-btn" href="#trending">Explore anime <span>↗</span></a>
+        <div class="hero-note"><span>✦</span> Discover stories beyond imagination</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="hero-sigil">Z</div>
+        <div class="floating-card card-one">夢 <span>DREAM</span></div>
+        <div class="floating-card card-two">世界 <span>NEW WORLDS</span></div>
+        <div class="hero-caption">A DIFFERENT WORLD<br>IS ONE CLICK AWAY.</div>
+      </div>
+    </section>
+
+    <section class="search-section" aria-label="Anime search">
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input id="anime-search" type="search" placeholder="Search anime, e.g. Naruto..." autocomplete="off">
+        <button id="search-button">Search <span>→</span></button>
+      </div>
+      <p id="search-status" class="search-status" aria-live="polite">Your next adventure starts here.</p>
+    </section>
+
+    <section class="section" id="trending">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE COMMUNITY'S FAVORITES</span>
+          <h2>Explore the <span>universe.</span></h2>
+        </div>
+        <span class="section-count">01 / DISCOVER</span>
+      </div>
+      <div id="anime-grid" class="anime-grid">
+        <div class="loading-card"><span class="loading-orb"></span><p>Preparing your anime universe...</p></div>
+      </div>
+    </section>
+
+    <section class="genre-section" id="genres">
+      <span class="eyebrow">CHOOSE YOUR JOURNEY</span>
+      <h2>What are you <span>in the mood for?</span></h2>
+      <div class="genre-list">
+        <button class="genre-chip" data-genre="Action">⚔ Action</button>
+        <button class="genre-chip" data-genre="Adventure">✦ Adventure</button>
+        <button class="genre-chip" data-genre="Romance">♡ Romance</button>
+        <button class="genre-chip" data-genre="Comedy">☻ Comedy</button>
+        <button class="genre-chip" data-genre="Fantasy">✧ Fantasy</button>
+        <button class="genre-chip" data-genre="Mystery">◈ Mystery</button>
+        <button class="genre-chip" data-genre="Sci-Fi">⌘ Sci-Fi</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#"><span class="brand-mark">Z</span>envori<span class="brand-dot">.</span></a>
+    <p>Made for the love of anime. <span>Discover responsibly.</span></p>
+    <span class="footer-copy">ZENVORI © 2026</span>
+  </footer>
+</body>
+</html>
