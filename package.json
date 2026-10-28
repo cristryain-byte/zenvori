@@ -1,13 +1,17 @@
 {
   "name": "zenvori",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Zenvori anime discovery website built with HTML, CSS, JavaScript, Node.js and Express",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
+  "keywords": [
+    "anime",
+    "discovery",
+    "express"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
